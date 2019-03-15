@@ -17,12 +17,18 @@ body {
 .header_main {
 	background: linear-gradient(90.23deg, rgba(0, 0, 0, 0.47) -4.8%, rgba(0, 0, 0, 0.61) 20.84%, rgba(0, 0, 0, 0.1) 71.28%), url('../img/group.png') no-repeat;
 	background-size: cover;
-
 	color: #fff;
 }
 
 a {
-	text-decoration: none
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu a {
+	display: inline-block;
+	padding: 2em;
+	margin: -2em;
 }
 
 ul,
@@ -242,10 +248,18 @@ li {
 }
 
 .btn_web_version {
-	margin-left: 14px;
 	font-size: 18px;
 	text-decoration-line: underline;
 	color: #FFFFFF;
+	padding: 1em;
+}
+
+.btn_web_version:hover {
+	text-decoration: none
+}
+
+.fa-angle-right_download:hover + .btn_web_version {
+	text-decoration: none
 }
 
 .container_features {
@@ -309,7 +323,7 @@ li {
 .features_slider_intro {
 	margin: auto;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 18px;
 	font-style: italic;
 	font-weight: 300;
 	font-size: 13px;
@@ -330,7 +344,30 @@ li {
 	font-size: 16px;
 	color: #000000;
 	font-style: italic;
-	line-height: 1.1;
+}
+
+.features_slider li {
+	position: relative;
+	padding-left: 58px;
+	padding-bottom: 14px;
+}
+
+.features_slider li::before {
+	content: "";
+	border-radius: 50%;
+	background: #3498DB;
+	border: 1px solid rgba(39, 140, 207, 0.56);
+	box-sizing: border-box;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	position: absolute;
+	margin-left: -25px;
+	margin-top: 4px;
+}
+
+.features_slider li::after {
+
 }
 
 .slider2 {
@@ -434,7 +471,7 @@ li {
 
 .opportunities_bot_right {
 	padding-top: 72px;
-	padding-right: 48px;
+	padding-left: 54px;
 }
 
 .opportunities_bop_left2 {
@@ -522,6 +559,7 @@ li {
 	margin-left: 630px;
 }
 
+
 /*Download*/
 
 .header {
@@ -545,7 +583,6 @@ li {
 .download {
 	background: url('../img/fon.png') no-repeat;
 	background-size: cover;
-
 }
 
 .download_top {
@@ -815,13 +852,13 @@ li {
 .feedback {
 	background: url('../img/fon.png') no-repeat;
 	background-size: cover;
+	min-height: 100vh;
 }
 
 .container_feedback {
 	max-width: 1171px;
 	margin: auto;
 	text-align: center;
-	padding-bottom: 103px;
 }
 
 .feedback_title {
@@ -852,8 +889,7 @@ li {
 	border-radius: 8px;
 	width: 571px;
 	height: 55px;
-	padding-left: 33px;
-
+	padding-left: 23px;
 }
 
 .row_text {
@@ -862,9 +898,30 @@ li {
 	border-radius: 8px;
 	width: 571px;
 	height: 157px;
-	padding-left: 33px;
-	padding-top: 27px;
+	padding-left: 23px;
+	padding-top: 17px;
+	padding-right: 17px;
+	resize: none;
+}
 
+.row::placeholder {
+	font-weight: 300;
+	color: #ADADAD;
+}
+
+.row:placeholder-shown {
+	font-size: 24px;
+}
+
+.row_text::placeholder {
+	font-weight: 300;
+	line-height: normal;
+	font-size: 24px;
+	color: #ADADAD;
+}
+
+.row_text:placeholder-shown {
+	font-size: 24px;
 }
 
 .feedback_btn {
