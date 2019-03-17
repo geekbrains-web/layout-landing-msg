@@ -331,11 +331,15 @@ li {
 	color: #000000;
 }
 
-.component {
-	margin-left: 31px;
-	float: left;
-	margin-right: 20px;
-	padding-top: 14px;
+.features_slider_intro_last {
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 27px;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 13px;
+	text-align: center;
+	color: #000000;
 }
 
 .features_slider {
@@ -344,12 +348,13 @@ li {
 	font-size: 16px;
 	color: #000000;
 	font-style: italic;
+
 }
 
 .features_slider li {
 	position: relative;
 	padding-left: 58px;
-	padding-bottom: 14px;
+
 }
 
 .features_slider li::before {
@@ -363,12 +368,10 @@ li {
 	display: inline-block;
 	position: absolute;
 	margin-left: -25px;
-	margin-top: 4px;
+	margin-top: 5px;
 }
 
-.features_slider li::after {
-
-}
+.features_slider li::after {}
 
 .slider2 {
 	border: 3px solid #fff;
